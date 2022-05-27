@@ -1,7 +1,6 @@
 package com.margaritasing;
 
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
@@ -10,16 +9,16 @@ public class Main {
     public static void main(String[] args){
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         // Crear un objeto de forma normal
-        CalculatorService service = new CalculatorService();
+        Calculadora service = new Calculadora();
 
         // Crear un objeto a partir de spring
-        CalculatorService calculadora = (CalculatorService) context.getBean("calculatorService");
+        Calculadora calculadora = (Calculadora) context.getBean("calculadora");
 
         String text =  calculadora.HolaMundo();
 
         System.out.println(text);
 
-        CalculatorService calculadora1 = (CalculatorService) context.getBean("calculatorService");
+        Calculadora calculadora1 = (Calculadora) context.getBean("calculadora");
         text = calculadora1.HolaMundo();
 
         System.out.println(text);
