@@ -1,6 +1,6 @@
 package com.margaritasing;
 
-public class CalculatorService {
+public class Calculadora {
 
     public String HolaMundo(){
         return "Hola mundo";

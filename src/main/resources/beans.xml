@@ -4,7 +4,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="calculatorService" class="com.margaritasing.CalculatorService">
+    <bean id="calculadora" class="com.margaritasing.Calculadora">
+        <!-- collaborators and configuration for this bean go here -->
+    </bean>
+
+    <bean id="gestorFacturas" class="com.margaritasing.GestorFactura">
         <!-- collaborators and configuration for this bean go here -->
     </bean>
 
