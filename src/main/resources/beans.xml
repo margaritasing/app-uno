@@ -9,7 +9,8 @@
     </bean>
 
     <bean id="gestorFacturas" class="com.margaritasing.GestorFactura">
-        <!-- collaborators and configuration for this bean go here -->
+        <constructor-arg name="calculadora" ref="calculadora" />
+        <constructor-arg name="nombre" value="Factura 3000" />
     </bean>
 
 
